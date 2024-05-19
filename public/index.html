@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Vuelos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Reserva de Vuelos</h1>
+    <form id="reservaForm">
+        <label for="origen">Origen:</label>
+        <input type="text" id="origen" name="origen" autocomplete="off" required>
+        <ul id="sugerenciasOrigen" class="sugerencias"></ul>
+        
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" name="destino" autocomplete="off" required>
+        <ul id="sugerenciasDestino" class="sugerencias"></ul>
+        
+        <label for="dia">Día de vuelo:</label>
+        <input type="date" id="dia" name="dia" required>
+        
+        <button type="submit">Guardar</button>
+    </form>
+    
+    <button id="mostrarVuelos">Ver Todos Los Vuelos Agendados</button>
+    <h2>Lista de Vuelos</h2>
+    <ul id="listaVuelos"></ul>
+
+    <script src="countries.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
